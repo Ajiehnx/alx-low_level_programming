@@ -1,18 +1,22 @@
-nclude "main.h"
+i#include <stdio.h>
+
+#include "main.h"
 
 
 
 /**
  *
- * * _puts - prints a string, str, with newline
+ *  *_puts - prints a string
  *
- * * @str: string to be printed
+ *   * @str: string to print
  *
- * *
+ *    *
  *
- * * Return: void
+ *     * Description: prints a string
  *
- * */
+ *      * On success: returns no error
+ *
+ *       */
 
 
 
@@ -20,22 +24,20 @@ void _puts(char *str)
 
 {
 
-		int count = 0;
+		int i = 0;
 
 
 
-			while (*(str + count) != '\0')
+			while (*(str + i) != '\0')
 
 					{
 
-								if (*(str + count) != '"')
+								putchar(*(str + i));
 
-												_putchar(*(str + count));
+										i++;
 
-									count++;
+											}
 
-										}
-
-				_putchar('\n');
+				putchar(10);
 
 }
